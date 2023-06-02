@@ -4,187 +4,239 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name</title>
+    <title>Dasun Thathsara</title>
 
-    <!-- Bootstrap CSS -->
+    <!-------------------  external js  ------------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!------------------- Bootstrap CSS ------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-------------------  external css  ------------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
 
-    <style>
-        .navbar-nav .nav-link {
-            color: #fff;
-        }
+    
 
-        .navbar-nav .nav-link:hover {
-            color: #fff;
-        }
-
-        .navbar-nav .active > .nav-link {
-            color: #fff;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 2000px;
-        }
-    </style>
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Company Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+<body class="bdark">
+    <div class="overlay">
+
+    </div>
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">I<span>nfinity&nbsp;</span>S<span>olutions</span></a>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                    <li>
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <div class="project">
+                            <div class="dropdown">
+                              <a href="" class="nav-link dropbtn">Projects</a>
+                              <div class="dropdown-content">
+                                <a href="Java_JavaFX.html">Java and JavaFX</a>
+                                <a href="Python.html">Python</a>
+                                <a href="Web_App.html">.NET Core MVC Web Application</a>
+                              </div>
+                            </div> 
+                        </div>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1>Welcome to Our IT Company</h1>
-                    <p class="lead">Providing Innovative Solutions for Your Business</p>
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="showcase-area" id="home">
+            <div class="container">
+                <div class="showcase-info anmd">
+                    <h1 class="heading">Infinity Solutions</h1>
+                    <p class="text">We create eveything you want</p>
+                    <div class="cta">
+                        <a href="mailto:dasun.thathsara.sri@gmail.com" class="btn btnh">Contact Us</a>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="path/to/hero-image.jpg" alt="Hero Image" class="img-fluid">
+                <div class="showcase-image">
+                    <!--img src="images/profile_photo.jpeg" alt="photo" class="person"-->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales euismod diam vel
-                        rhoncus. Integer eu turpis sit amet dui consequat tincidunt.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="path/to/about-image.jpg" alt="About Us" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <h3>Service 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales euismod diam vel rhoncus.
-                        Integer eu turpis sit amet dui consequat tincidunt.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Service 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales euismod diam vel rhoncus.
-                        Integer eu turpis sit amet dui consequat tincidunt.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3>Service 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales euismod diam vel rhoncus.
-                        Integer eu turpis sit amet dui consequat tincidunt.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Our Portfolio</h2>
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="path/to/portfolio-image1.jpg" alt="Portfolio 1" class="img-fluid">
-                </div>
-                <div class="col-lg-4">
-                    <img src="path/to/portfolio-image2.jpg" alt="Portfolio 2" class="img-fluid">
-                </div>
-                <div class="col-lg-4">
-                    <img src="path/to/portfolio-image3.jpg" alt="Portfolio 3" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+        <section class="about-section section"  id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 anmd" style="text-align: center;">
+                        <img src="images/programming.png" alt="" style="max-width: 100%;">
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-7 anmt">
+                        <h3 class="sub-heading">About Us</h3>
+                        <h1 class="heading">Better design<br /> better experiences</h1>
+                        <p class="text">
+                            I am a computer science student currently studying at first year at the University of Colombo school of computing.I have both front end development skills and back end development skills.<br />
+                        </p>
+                        <div class="cta">
+                            <a href="mailto:dasun.thathsara.sri@gmail.com" class="btn btnh">Contact me</a>
+                            <a href="1465189.jpg" download class="btn secondary-btn">Download CV</a>
                         </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <h3>Contact Information</h3>
-                    <p>123 Main Street, City, Country</p>
-                    <p>Email: info@example.com</p>
-                    <p>Phone: +1 234 5678</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h5>Footer Section 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales euismod diam vel rhoncus.
-                        Integer eu turpis sit amet dui consequat tincidunt.</p>
+        <section class="about-section section" id="services">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 anml">
+                    <div class="services-info">
+                        <h3 class="sub-heading">My Services</h3>
+                        <h1 class="heading">Things we may do for our clients</h1>
+                        <p class="text">
+                            From offering in-depthnuser research, to helping with design 
+                            and testing, we can help bring your product to life.
+                        </p>
+                        <div class="milestones">
+                            <div class="ml">
+                                <h2 class="number"><span data-target="02">00</span>+</h2>
+                                <h5>Years</h5>
+                            </div>
+                            <div class="ml">
+                                <h2 class="number"><span data-target="10">00</span></h2>
+                                <h5>Projects</h5>
+                            </div>
+                            <div class="ml">
+                                <h2 class="number"><span data-target="02">00</span></h2>
+                                <h5>clients</h5>
+                            </div>
+                        </div>
+                        <div class="cta">
+                            <a href="#" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 anmr">
+                    <div class="services-grid">
+                        <div class="srv-card">
+                            <div class="card-desc">
+                                <h3>Web Developing</h3>
+                                <p class="text">
+                                    
+                                </p>
+                            </div>
+                            <a href="#" class="btn secondary-btn">Explore More</a>
+                        </div>
+                        <div class="srv-card">
+                            <div class="card-desc">
+                                <h3>Java and JavaFX Projects</h3>
+                                <ol style="padding-left: 8px;">
+                                </ol>
+                            </div>
+                            <a href="#" class="btn secondary-btn">Explore More</a>
+                        </div>
+                        <div class="srv-card">
+                            <div class="card-desc">
+                                <h3>.NET Core MVC Web Applications</h3>
+                                <ol style="padding-left: 8px;">
+                                </ol>
+                            </div>
+                            <a href="#" class="btn secondary-btn">Explore More</a>
+                        </div>
+                        <div class="srv-card">
+                            <div class="card-desc">
+                                <h3>Python Projects</h3>
+                                <ol style="padding-left: 8px;">
+                                </ol>
+                            </div>
+                            <a href="#" class="btn secondary-btn">Explore More</a>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-6">
-                    <h5>Footer Section 2</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales euismod diam vel rhoncus.
-                        Integer eu turpis sit amet dui consequat tincidunt.</p>
+              </div>
+        </section>
+
+        <section class="skills section" id="contact">
+            <div class="container anmd">
+                <div class="skills-box" style="width: 100%;">
+                    <div class="box-heading">
+                        
+                        <h3 class="sub-heading">Contact</h3>
+                        <h1 class="heading">Fill out the form below to contact me</h1>
+
+                        <div class="container">
+                            <div class="row">
+                              <div class="col-12">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" aria-describedby="name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" aria-describedby="subject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                                      </div>
+                                    <div class="mb-3 form-check">
+                                      <input type="checkbox" class="form-check-input" id="check" required>
+                                      <label class="form-check-label" for="check">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btnh">Submit</button>
+                                  </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center py-3">
-            &copy; 2023 infinity web solutions. All rights reserved.
-        </div>
-    </footer>
-    
+        </section>
+
+        <section class="footer-section" id="footer">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-12" style="text-align: center;">
+                    <img src="images/fb.png" alt="">
+                    <img src="images/gh.png" alt="">
+                    <img src="images/li.png" alt="">
+                    <img src="images/tw.png" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" style="text-align: center">
+                      <p>&copy;Copyright 2023. All rights reserved</p>
+                    </div>
+                  </div>
+              </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
