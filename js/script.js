@@ -41,14 +41,14 @@ window.addEventListener("scroll", stickyNavbar)
 
 let sr = ScrollReveal({
     duration: 2500, 
-    distance: "60px",
+    distance: "100px",
 });
 
-sr.reveal(".anmd", { delay : 600 });
-sr.reveal(".anmt", { origin : "top", delay : 700 });
-sr.reveal(".anms", { origin : "top", delay : 200 });
-sr.reveal(".anml", { origin : "left", delay : 700 });
-sr.reveal(".anmr", { origin : "right", delay : 700 });
+sr.reveal(".anmd", { delay : 10 });
+sr.reveal(".anmt", { origin : "top", delay : 10 });
+sr.reveal(".anms", { origin : "top", delay :10 });
+sr.reveal(".anml", { origin : "left", delay : 10 });
+sr.reveal(".anmr", { origin : "right", delay : 10 });
 
 /*----------------------- Skills Progress Bar Animation -----------------------*/
 
@@ -104,53 +104,9 @@ function mlCounter(){
 
         setTimeout(() => {
             updateCount(ctr, target);
-        }, 1600);
+        }, 2000);
     });
 }
-
-/*-------------------------------- Dark Mode -------------------------------*/
-
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark");
-
-    element = document.querySelector('.uil-moon');
-    element.classList.toggle("uil-sun");
-
-    element = document.querySelector('.heading');
-    element.classList.toggle("heading-dark");
-
-    element = document.querySelector('.sub-heading');
-    element.classList.toggle("sub-heading-dark");
-
-    element = document.querySelector('.about');
-    element.classList.toggle("about-dark");
-
-    element = document.querySelector('.skills');
-    element.classList.toggle("skills-dark");
-
-    element = document.querySelector('.services');
-    element.classList.toggle("services-dark");
-
-    element = document.querySelector('.skills-box');
-    element.classList.toggle("skills-box-dark");
-
-    element = document.querySelector('.srv-card');
-    element.classList.toggle("srv-card-dark");
-
-    element = document.querySelector('.btn.secondary-btn');
-    element.classList.toggle("secondary-btn-dark");
-
-    element = document.querySelector('.logo');
-    element.classList.toggle("logo-dark");
-
-    element = document.querySelector('.nav-link');
-    element.classList.toggle("nav-link-dark");
-
-    element = document.querySelector('.btn');
-    element.classList.toggle("btn-dark");   
-    
- }
 
 /*-------------------------------- Open & Close Navbar Menu -------------------------------*/
 
@@ -165,3 +121,14 @@ links.forEach((link) =>
         document.body.classList.remove("stopscrolling");
     })
 );
+
+
+
+function myFunction() {
+    var element1, element2, element2;
+    element1 = document.querySelector('.chat-box');
+    element1.classList.toggle("chat-box-active");
+
+    element2 = document.querySelector('.chatbtn');
+    element2.classList.toggle("chatbtn-active");
+}
