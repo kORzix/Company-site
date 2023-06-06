@@ -36,7 +36,7 @@ section{
 body{
     overflow-x: hidden;
     /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(https://mcdn.wallpapersafari.com/medium/7/45/IngcfO.png) no-repeat center center fixed;  */
-    height: 100vh;
+/*     height: 100vh; */
     background: url(https://mcdn.wallpapersafari.com/medium/7/45/IngcfO.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
